@@ -6,6 +6,12 @@
   background-color: hsla(0, 1%, 72%, .1);
 }
 
+@media (max-width: 359px) {
+  .login {
+    margin-top: 10px;
+  }
+}
+
 .login__form,
 .login__loged {
   text-align: center;

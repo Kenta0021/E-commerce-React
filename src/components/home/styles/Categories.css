@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+  cursor: pointer;
+  color: var(--color-red);
+}
+
+.categories {
+  margin: 20px;
+}
+
+.categories__list {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.categories__list-element {
+  display: flex;
+  gap: 30px;
+}
