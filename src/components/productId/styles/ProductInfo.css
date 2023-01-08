@@ -1,0 +1,147 @@
+.productInfo {
+  font-size: 18px;
+  padding: 10px;
+}
+
+.productInfo__slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.productInfo__slider-container {
+  display: flex;
+  width: 300%;
+  transition: transform 300ms ease;
+}
+
+.productInfo__slider-container.first {
+  transform: translateX(calc(-100% * 0/3));
+}
+
+.productInfo__slider-container.second {
+  transform: translateX(calc(-100% * 1/3));
+}
+
+.productInfo__slider-container.third {
+  transform: translateX(calc(-100% * 2/3));
+}
+
+.productInfo__slider img {
+  max-height: 400px;
+  object-fit: contain;
+  width: calc(100% / 3);
+}
+
+@media (min-width: 700px) {
+  .productInfo {
+    display: flex;
+  }
+
+  .productInfo__slider{
+    width: 50%;
+  }
+
+  .productInfo__info {
+    width: 50%;
+  }
+}
+
+.productInfo__slider-arrowLeft {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  left: 20px;
+  color: var(--color-red);
+  font-size: 30px;
+  background-color: rgba(151, 149, 149, 0.208);
+  padding: 10px;
+  border-radius: 50%;
+  flex-wrap: wrap;
+
+}
+
+.productInfo__slider-arrowRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  right: 20px;
+  color: var(--color-red);
+  font-size: 30px;
+  background-color: rgba(151, 149, 149, 0.208);
+  padding: 10px;
+  border-radius: 50%;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+
+  .productInfo__slider img {
+    margin-bottom: 50px;
+  }
+
+  .productInfo__slider-arrowLeft{
+    transform: translateY(0);
+    top: 81%;
+  }
+
+  .productInfo__slider-arrowRight {
+    transform: translateY(0);
+    top: 81%;
+  }
+
+}
+
+.productInfo__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.productInfo__container-price {
+  flex: 1 1;
+}
+
+.productInfo__price-title,
+.productInfo__quantity-title {
+  color: var(--color-gray);
+  font-weight: normal;
+}
+
+.productInfo__price {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.productInfo__container-quantity {
+  flex: 1 1;
+}
+
+.productInfo__container-counter {
+  display: flex;
+  margin-left: 10px;
+}
+
+.productInfo__counter {
+  padding: 10px;
+  border: 1px solid var(--color-gray);
+}
+
+.productInfo__minus,
+.productInfo__plus {
+  cursor: pointer;
+  padding: 10px 15px;
+  border: 1px solid var(--color-gray);
+}
+
+.productInfo__btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: white;
+  background-color: var(--color-red);
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
